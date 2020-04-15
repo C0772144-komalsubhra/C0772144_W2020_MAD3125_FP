@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/pinkgradient">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/logo_id"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_id"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Komal Subhra"
+        android:textStyle="italic"
+        android:fontFamily="@font/acme"
+        android:textColor="#FF6347"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_marginTop="30dp"
+        android:text="C0772144"
+        android:textStyle="italic"
+        android:fontFamily="@font/acme"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF6347"
+        android:textSize="30dp" />
+
+</RelativeLayout>
