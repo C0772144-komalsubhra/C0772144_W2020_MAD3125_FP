@@ -34,6 +34,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.google.android.material:material:1.2.0-alpha05'
-    compile 'com.github.ChanphengHor:EditTextIconLeft:0.1.0'
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.3'
+
 
 }

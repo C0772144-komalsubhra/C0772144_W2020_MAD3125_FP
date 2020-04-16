@@ -1,5 +1,6 @@
 package com.example.c0772144_w2020_mad3125_fp;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Switch;
@@ -16,7 +17,14 @@ public class LoginActivity extends AppCompatActivity {
     private TextInputLayout edtEmailId;
     private TextInputLayout edtPassword;
     private Button btnlogin;
-    private Switch swchRememberMe;
+    private Switch aswitch;
+
+    SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
+
+    public static final String PREFS_NAME = "PreferenceFile";
+    private static final String PREF_USERNAME = "username";
+    private static final String PREF_PASSWORD = "password";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
