@@ -4,22 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pinkgradient"
-    tools:context=".LoginActivity">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="106dp"
-        android:layout_marginBottom="496dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/login" />
+    android:background="@drawable/login_background"
+    tools:context=".abhishek.ui.LoginActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtEmailId"
@@ -31,7 +17,7 @@
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="170dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
+        android:inputType="textPersonName"
         android:textColorHint="#FFFFFF"
         app:boxStrokeColor="#FFFFFF"
         app:boxStrokeErrorColor="#FFFFFF"
@@ -51,9 +37,9 @@
             android:id="@+id/edtEmailIdText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/rounded_edittext_states"
+            android:background="@drawable/rounded_edittext"
             android:cursorVisible="true"
-            android:hint="Enter your email address"
+            android:hint="Enter your email"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -68,7 +54,7 @@
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="150dp"
         android:ems="10"
-        android:inputType="textPassword"
+        android:inputType="textPersonName"
         android:textColorHint="#FFFFFF"
         app:boxStrokeColor="#FFFFFF"
         app:boxStrokeErrorColor="#FFFFFF"
@@ -88,7 +74,7 @@
             android:id="@+id/edtPasswordText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/rounded_edittext_states"
+            android:background="@drawable/rounded_edittext"
             android:cursorVisible="true"
             android:drawableLeft="@android:drawable/ic_lock_idle_lock"
             android:hint="Enter your password"
@@ -97,7 +83,19 @@
             android:textColorHint="#000000" />
     </com.google.android.material.textfield.TextInputLayout>
 
-
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="496dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mainlogo" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -109,7 +107,7 @@
         android:layout_marginBottom="180dp"
         android:background="@drawable/gradient"
         android:ellipsize="middle"
-        android:text="LOGIN"
+        android:text="LOG IN"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -117,7 +115,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
-        android:id="@+id/switchRememberMe"
+        android:id="@+id/swchRememberMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="139dp"
@@ -133,6 +131,23 @@
         android:textColorLink="#DD2323"
         android:textSize="18sp"
         android:theme="@style/SwitchTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="680dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="90dp"
+        android:fontFamily="@font/cutive"
+        android:text="ABOUT US"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
