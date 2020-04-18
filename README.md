@@ -1,6 +1,6 @@
 # C0772144_W2020_MAD3125_FP
 
-REFERENCES:
+REFERENCES
 
 1.https://abhiandroid.com/programming/splashscreen
 2.https://androidarticlesblog.wordpress.com/2017/04/20/animated-gradient-background-splash-screen/
