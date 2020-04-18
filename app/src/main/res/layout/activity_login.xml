@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
-    tools:context=".abhishek.ui.LoginActivity">
+    android:background="@drawable/pinkgradient"
+    tools:context=".LoginActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtEmailId"
@@ -37,7 +37,7 @@
             android:id="@+id/edtEmailIdText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/rounded_edittext"
+            android:background="@drawable/round_edittext"
             android:cursorVisible="true"
             android:hint="Enter your email"
             android:textColor="#FFFFFF"
@@ -74,7 +74,7 @@
             android:id="@+id/edtPasswordText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/rounded_edittext"
+            android:background="@drawable/round_edittext"
             android:cursorVisible="true"
             android:drawableLeft="@android:drawable/ic_lock_idle_lock"
             android:hint="Enter your password"
@@ -95,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mainlogo" />
+        app:srcCompat="@drawable/login" />
 
     <Button
         android:id="@+id/btnLogin"
