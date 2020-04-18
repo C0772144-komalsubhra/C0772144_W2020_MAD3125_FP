@@ -63,7 +63,6 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         AndroidThreeTen.init(this);
 
-        // BIOMETRIC CODE
         executor = ContextCompat.getMainExecutor(this);
         biometricPrompt = new BiometricPrompt(LoginActivity.this,
                 executor, new BiometricPrompt.AuthenticationCallback() {
@@ -88,21 +87,15 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onAuthenticationFailed() {
                 super.onAuthenticationFailed();
-                invalidFinger();
             }
         });
 
         promptInfo = new BiometricPrompt.PromptInfo.Builder()
-                .setTitle("Biometric login for my app")
-                .setSubtitle("Log in using your biometric credential")
-                .setNegativeButtonText("Use password")
+                .setTitle("Biometric login ")
+                .setSubtitle("Log in using your fingerprint")
+                .setNegativeButtonText("Use password Instead")
                 .build();
 
-        // Prompt appears when user clicks "Log in".
-        // Consider integrating with the keystore to unlock cryptographic operations,
-        // if needed by your app.
-
-        // BIOMETRIC CODE END
 
         ActionBar mActionBar = getSupportActionBar();
         mActionBar.hide();
@@ -210,7 +203,6 @@ public class LoginActivity extends AppCompatActivity {
 
     public void successfulLogin()
     {
-        mp.start();
         Intent mIntent = new Intent(LoginActivity.this, CustomerListActivity.class);
         startActivity(mIntent);
         return;
@@ -230,18 +222,5 @@ public class LoginActivity extends AppCompatActivity {
                 .show();
         return;
     }
-    public void invalidFinger()
-    {
-        new MaterialAlertDialogBuilder(LoginActivity.this)
-                .setTitle("Invalid fingerprint")
-                .setMessage("Please try again")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                })
-                .show();
-        return;
-    }
+
 }
