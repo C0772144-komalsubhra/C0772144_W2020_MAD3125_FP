@@ -26,7 +26,7 @@ public class MobileBillsFragment extends Fragment {
     @BindView(R.id.txtFragPlanName) TextView txtFragPlanName;
     @BindView(R.id.txtFragMinsUsed) TextView txtFragMinsUsed;
     @BindView(R.id.txtFragBillAmount) TextView txtFragBillAmount;
-    private Bill fragBillObj;
+    private Bill obj;
 
     public MobileBillsFragment() { }
 
