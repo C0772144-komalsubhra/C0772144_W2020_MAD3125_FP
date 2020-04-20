@@ -3,7 +3,7 @@ package com.example.c0772144_w2020_mad3125_fp.komal.Model;
 import org.joda.time.LocalDate;
 
 public class Hydro extends Bill{
-    private String agencyName;
+    private String name;
     private Integer unitsUsed;
 
     public Hydro(String billId, LocalDate billDate, BillType billType, String agencyName, Integer unitsUsed){
