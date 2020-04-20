@@ -1,5 +1,6 @@
 package com.example.c0772144_w2020_mad3125_fp.komal.Activities;
 
+import android.app.DatePickerDialog;
 import android.widget.Button;
 import android.widget.Spinner;
 
@@ -34,5 +35,6 @@ public class AddNewBillActivity extends AppCompatActivity {
     @BindView(R.id.edtAgencyNameText) TextInputEditText edtAgencyNameText;
     @BindView(R.id.btnBillAdd)
     Button btnBillAdd;
-
+    private DatePickerDialog.OnDateSetListener mDateSetListener;
+    Customer customerObj2;
 }
