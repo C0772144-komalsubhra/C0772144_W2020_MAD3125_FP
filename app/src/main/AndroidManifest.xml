@@ -1,33 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.c0772144_w2020_mad3125_fp"
-    >
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
-
+    package="com.example.c0772144_w2020_mad3125_fp">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:hardwareAccelerated="true">
-
-        <activity android:name=".komal.Activities.SplashScreenActivity"
-            android:label="@string/app_name">
+        android:theme="@style/AppTheme">
+        <activity android:name=".komal.Activities.AboutActivity"></activity>
+        <activity android:name=".komal.Activities.ShowBillDetailsActivity" />
+        <activity android:name=".komal.Activities.AddNewBillActivity" />
+        <activity android:name=".komal.Activities.BillDetailsActivity" />
+        <activity android:name=".komal.Activities.AddCustomerActivity" />
+        <activity android:name=".komal.Activities.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".komal.Activities.LoginActivity"
-            android:label="@string/app_name">
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>/>
-        </activity>
+        <activity android:name=".komal.Activities.CustomerListActivity" />
+        <activity android:name=".komal.Activities.LoginActivity" />
+
     </application>
 
 </manifest>
