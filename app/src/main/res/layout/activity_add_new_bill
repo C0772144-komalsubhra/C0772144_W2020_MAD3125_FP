@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".komal.Activities.AddNewBillActivity">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/t2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:layout_marginBottom="908dp"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="#1FCDF0"
+            android:fontFamily="cursive"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:shadowColor="#0E0000"
+            android:text="SELECT BILL TYPE"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="460dp"
+            android:layout_marginEnd="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@android:drawable/ic_menu_my_calendar">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_edittext"
+                android:cursorVisible="true"
+                android:fontFamily="cursive"
+                android:hint="ENTER PHONE NUMBER"
+                android:textColor="#050000"
+                android:textColorHint="#050000"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtUnitsUsed"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="460dp"
+            android:layout_marginEnd="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColorHint="#000000"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@android:drawable/ic_menu_my_calendar">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtUnitsUsedText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_edittext"
+                android:cursorVisible="true"
+                android:fontFamily="cursive"
+                android:hint="ENTER UNITS USED"
+                android:textColor="#050000"
+                android:textColorHint="#050000"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtBillId"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="796dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColorHint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@android:drawable/ic_menu_info_details">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtBillIdText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_edittext"
+                android:cursorVisible="true"
+                android:fontFamily="cursive"
+                android:hint="ENTER BILL ID"
+                android:textColor="#050000"
+                android:textColorHint="#050000"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="63dp"
+            android:layout_marginEnd="102dp"
+            android:layout_marginBottom="891dp"
+            android:fontFamily="cursive"
+            android:text="NEW BILL"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.653"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtBillDate"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="393dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="733dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColorHint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@android:drawable/ic_menu_month">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtBillDateText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_edittext"
+                android:cursorVisible="true"
+                android:focusable="false"
+                android:fontFamily="cursive"
+                android:hint="BILL DATE"
+                android:textColor="#050000"
+                android:textColorHint="#050000"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtDataUsed"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="528dp"
+            android:layout_marginEnd="12dp"
+            android:ems="10"
+            android:inputType="none"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@android:drawable/ic_menu_edit">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtDataUsedText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_edittext"
+                android:cursorVisible="true"
+                android:fontFamily="cursive"
+                android:hint="ENTER DATA USED "
+                android:textColor="#050000"
+                android:textColorHint="#050000"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtAgencyName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="528dp"
+            android:layout_marginEnd="12dp"
+            android:ems="10"
+            android:inputType="none"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@android:drawable/ic_menu_edit">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtAgencyNameText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_edittext"
+                android:cursorVisible="true"
+                android:fontFamily="cursive"
+                android:hint="ENTER AGENCY NAME "
+                android:textColor="#050000"
+                android:textColorHint="#050000"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtMinsUsed"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="590dp"
+            android:layout_marginEnd="12dp"
+            android:ems="10"
+            android:inputType="none|textEmailAddress"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@android:drawable/sym_action_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtMinsUsedText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_edittext"
+                android:cursorVisible="true"
+                android:fontFamily="cursive"
+                android:hint="ENTER MINUTES USED"
+                android:textColor="#050000"
+                android:textColorHint="#050000"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtManufacName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="655dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="474dp"
+            android:ems="10"
+            android:inputType="none|textPassword"
+            android:textColorHint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@android:drawable/ic_menu_view">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtManufacNameText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_edittext"
+                android:cursorVisible="true"
+                android:fontFamily="cursive"
+                android:hint="ENTER MANUFACTURER NAME"
+                android:textColor="#050000"
+                android:textColorHint="#050000"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edtPlanName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="718dp"
+            android:layout_marginEnd="12dp"
+            android:ems="10"
+            android:inputType="textPersonName|text"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@android:drawable/ic_menu_myplaces">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPlanNameText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_edittext"
+                android:cursorVisible="true"
+                android:fontFamily="cursive"
+                android:hint="ENTER YOUR PLAN NAME"
+                android:textColor="#050000"
+                android:textColorHint="#050000"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnBillAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="238dp"
+            android:layout_marginBottom="308dp"
+            android:background="@color/colorPrimaryDark"
+            android:drawableRight="@android:drawable/ic_menu_upload"
+            android:text="ADD"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtLocation" />
+
+
+        <Spinner
+            android:id="@+id/spnBillType"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="970dp"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

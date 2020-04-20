@@ -1,6 +1,6 @@
 package com.example.c0772144_w2020_mad3125_fp.komal.Activities;
 
-class AboutWebActivity : AppCompatActivity()  {
+class AboutActivity : AppCompatActivity()  {
         override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)

@@ -79,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
         txtAboutUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mIntent = new Intent(LoginActivity.this, AboutWebActivity.class);
+                Intent mIntent = new Intent(LoginActivity.this, AboutActivity.class);
                 startActivity(mIntent);
             }
         });

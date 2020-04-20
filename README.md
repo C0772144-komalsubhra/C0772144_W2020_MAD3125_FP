@@ -4,6 +4,5 @@ References
 2. https://www.codeproject.com/Tips/845894/How-to-make-EditText-With-Border-and-Gradient-Back
 3. https://github.com/Suleiman19/Android-Material-Design-for-pre-Lollipop/blob/master/MaterialSample/app/src/main/res/layout/activity_launch_screen.xml
 4. https://www.youtube.com/watch?v=uOn1MnojL14
-5. https://github.com/jshepdevelopment/IncomeTaxCalculator
-
+5.https://stackoverflow.com/questions/13816464/how-to-load-html-string-in-a-webview
 
