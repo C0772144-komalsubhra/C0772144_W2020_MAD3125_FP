@@ -1,11 +1,12 @@
-package com.example.c0772144_w2020_mad3125_fp;
+package com.example.c0772144_w2020_mad3125_fp.komal.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
+
+import com.example.c0772144_w2020_mad3125_fp.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
     Handler handler;

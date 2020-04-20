@@ -1,4 +1,4 @@
-package com.example.c0772144_w2020_mad3125_fp;
+package com.example.c0772144_w2020_mad3125_fp.komal.Activities;
 
 import android.app.DatePickerDialog;
 import android.content.DialogInterface;
@@ -14,6 +14,8 @@ import android.widget.RadioButton;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.c0772144_w2020_mad3125_fp.Customer;
+import com.example.c0772144_w2020_mad3125_fp.R;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;

@@ -1,10 +1,12 @@
-package com.example.c0772144_w2020_mad3125_fp;
+package com.example.c0772144_w2020_mad3125_fp.komal.Activities;
 
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.c0772144_w2020_mad3125_fp.komal.Model.Bill;
 
 import java.util.ArrayList;
 
