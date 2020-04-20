@@ -1,0 +1,58 @@
+[
+  {
+    "customerId": "1",
+    "firstName": "Komal",
+    "lastName": "Subhra",
+    "gender": "Female",
+    "email": "komal@gmail.com",
+    "userName" : "komal",
+    "password" : "komal123",
+    "location" : "Canada",
+    "dateOfBirth" : "29/11/1993"
+  },
+  {
+    "customerId": "2",
+    "firstName": "Vivek",
+    "lastName": "Subhra",
+    "gender": "Male",
+    "email": "vivek@gmail.com",
+    "userName" : "vivek",
+    "password" : "india",
+    "location" : "India",
+    "dateOfBirth" : "11/02/1987"
+  },
+  {
+    "customerId": "3",
+    "firstName": "Jasmine",
+    "lastName": "Bhanot",
+    "gender": "Female",
+    "email": "jass@gmail.com",
+    "userName" : "Jass",
+    "password" : "babygirl",
+    "location" : "England",
+    "dateOfBirth" : "04/07/2019"
+  },
+  {
+    "customerId": "4",
+    "firstName": "Prachi",
+    "lastName": "Subhra",
+    "gender": "Female",
+    "email": "pihu@gmail.com",
+    "userName" : "Pihu",
+    "password" : "grade1",
+    "location" : "Canada",
+    "dateOfBirth" : "17/06/2013"
+  },
+  {
+    "customerId": "5",
+    "firstName": "Danish",
+    "lastName": "Subhra",
+    "gender": "Male",
+    "email": "danish@gmail.com",
+    "userName" : "danish",
+    "password" : "baby",
+    "location" : "canada",
+    "dateOfBirth" : "25/08/2016"
+  }
+
+  ]
