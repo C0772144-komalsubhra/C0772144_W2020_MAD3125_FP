@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "email": "komal@gmail.com",
+      "password": "komal123"
+    },
+    {
+      "email": "vivek@gmail.com",
+      "password": "india"
+    },
+    {
+      "email": "jass@gmail.com",
+      "password": "babygirl"
+    },
+    {
+      "email": "pihu@gmail.com",
+      "password": "grade1"
+    },
+    {
+      "email": "danish@gmail.com",
+      "password": "baby"
+    }
+
+  ]
+}
