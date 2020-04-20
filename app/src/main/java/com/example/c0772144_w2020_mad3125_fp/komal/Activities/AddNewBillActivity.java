@@ -3,6 +3,7 @@ package com.example.c0772144_w2020_mad3125_fp.komal.Activities;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
@@ -12,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.c0772144_w2020_mad3125_fp.R;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+
+import java.util.ArrayList;
 
 public class AddNewBillActivity extends AppCompatActivity {
     @BindView(R.id.spnBillType)
@@ -51,4 +54,18 @@ public class AddNewBillActivity extends AppCompatActivity {
 
         ActionBar mActionBar = getSupportActionBar();
         mActionBar.hide();
+        ArrayList<String> billType = new ArrayList<>();
+        billType.add("MOBILE");
+        billType.add("HYDRO");
+        billType.add("INTERNET");
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, billType);
+
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spnBillType.setAdapter(dataAdapter);
+
+        spnBillType.setOnItemSelectedListener(this);
+
+
+        addingDatePicker();
 }
