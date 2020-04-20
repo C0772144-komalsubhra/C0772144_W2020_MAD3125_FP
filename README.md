@@ -5,4 +5,6 @@ References
 3. https://github.com/Suleiman19/Android-Material-Design-for-pre-Lollipop/blob/master/MaterialSample/app/src/main/res/layout/activity_launch_screen.xml
 4. https://www.youtube.com/watch?v=uOn1MnojL14
 5.https://stackoverflow.com/questions/13816464/how-to-load-html-string-in-a-webview
+6.https://proandroiddev.com/5-steps-to-implement-biometric-authentication-in-android-dbeb825aeee8
+7.https://www.tutlane.com/tutorial/android/android-json-parsing-wi
 
