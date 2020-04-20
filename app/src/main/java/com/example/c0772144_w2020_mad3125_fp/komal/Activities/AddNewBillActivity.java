@@ -1,9 +1,12 @@
 package com.example.c0772144_w2020_mad3125_fp.komal.Activities;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
+import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.c0772144_w2020_mad3125_fp.R;
@@ -37,4 +40,15 @@ public class AddNewBillActivity extends AppCompatActivity {
     Button btnBillAdd;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
     Customer customerObj2;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_add_new_bill);
+        ButterKnife.bind(this);
+
+        Intent mIntent = getIntent();
+        customerObj2 = mIntent.getParcelableExtra("CustomerBills2");
+
+        ActionBar mActionBar = getSupportActionBar();
+        mActionBar.hide();
 }
