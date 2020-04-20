@@ -8,6 +8,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -77,6 +78,7 @@ public class AddNewBillActivity extends AppCompatActivity {
 
 
         addingDatePicker();
+    }
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
             ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
@@ -190,7 +192,7 @@ public class AddNewBillActivity extends AppCompatActivity {
                         if(edtBillDateText.getText().toString().isEmpty()){
                             edtBillDateText.setError("Please enter your the bill text");
                             someFlag = true;
-                            return;
+                            return
                         }
                         if(edtAgencyNameText.getText().toString().isEmpty())
                         {
@@ -232,7 +234,7 @@ public class AddNewBillActivity extends AppCompatActivity {
                         }
                     }
                 });
-            
+
 
             if(position == 2)
             {
