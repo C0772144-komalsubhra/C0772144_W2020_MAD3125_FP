@@ -4,22 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pinkgradient"
+    android:background="@drawable/background"
     tools:context=".komal.Activities.LoginActivity">
-    
-     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="106dp"
-        android:layout_marginBottom="496dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/login" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtEmailId"
@@ -27,18 +13,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="170dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textColorHint="#FFFFFF"
-        app:boxStrokeColor="#FFFFFF"
-        app:boxStrokeErrorColor="#FFFFFF"
-        app:boxStrokeWidth="4dp"
-        app:errorEnabled="false"
-        app:errorTextColor="#FFFFFF"
-        app:hintTextColor="#FFFFFF"
+        android:textColorHint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -51,11 +31,11 @@
             android:id="@+id/edtEmailIdText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/round_edittext"
+            android:background="@drawable/rounded_edittext"
             android:cursorVisible="true"
             android:hint="Enter your email"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -64,17 +44,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="230dp"
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="150dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textColorHint="#FFFFFF"
-        app:boxStrokeColor="#FFFFFF"
-        app:boxStrokeErrorColor="#FFFFFF"
-        app:boxStrokeWidth="4dp"
-        app:errorTextColor="#FFFFFF"
-        app:hintTextColor="#FFFFFF"
+        android:textColorHint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -88,16 +63,28 @@
             android:id="@+id/edtPasswordText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/round_edittext"
+            android:background="@drawable/rounded_edittext"
             android:cursorVisible="true"
             android:drawableLeft="@android:drawable/ic_lock_idle_lock"
             android:hint="Enter your password"
             android:inputType="textPassword"
-            android:textColor="#FFFFFF"
+            android:textColor="#000000"
             android:textColorHint="#000000" />
     </com.google.android.material.textfield.TextInputLayout>
 
-   
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="496dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -121,16 +108,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="139dp"
-        android:layout_marginTop="435dp"
+        android:layout_marginTop="450dp"
         android:layout_marginEnd="140dp"
         android:layout_marginBottom="269dp"
-        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="#000000"
         android:scrollbarSize="4sp"
-        android:shadowColor="@color/colorPrimary"
         android:text="Remember Me"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="@color/colorPrimary"
-        android:textColorLink="#DD2323"
+        android:textColor="#000000"
         android:textSize="18sp"
         android:theme="@style/SwitchTheme"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -138,20 +122,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txtAboutApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="680dp"
-        android:layout_marginEnd="173dp"
-        android:layout_marginBottom="90dp"
-        android:fontFamily="@font/cutive"
-        android:text="ABOUT US"
-        android:textColor="@color/colorPrimary"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
